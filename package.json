@@ -1,0 +1,27 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "commerce sharing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicanismo/exchange.git"
+  },
+  "author": "Juan Guardado and Alberto Maldueno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chicanismo/exchange/issues"
+  },
+  "homepage": "https://github.com/chicanismo/exchange#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "webpack": "^1.14.0"
+  }
+}
