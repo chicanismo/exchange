@@ -4,6 +4,9 @@
   "description": "commerce sharing app",
   "main": "index.js",
   "scripts": {
+    "letsGo": "npm run build | npm start",
+    "build": "webpack",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +20,9 @@
   },
   "homepage": "https://github.com/chicanismo/exchange#readme",
   "dependencies": {
+    "express": "^4.14.0",
     "lodash": "^4.17.4",
+    "path": "^0.12.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",

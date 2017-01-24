@@ -1,1 +1,1 @@
-<h1>loaded</h1>
+console.log("loaded");
