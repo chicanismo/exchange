@@ -21524,9 +21524,9 @@
 
 	var _testing2 = _interopRequireDefault(_testing);
 
-	var _Landing = __webpack_require__(180);
+	var _Navbar = __webpack_require__(180);
 
-	var _Landing2 = _interopRequireDefault(_Landing);
+	var _Navbar2 = _interopRequireDefault(_Navbar);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21551,7 +21551,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_Landing2.default, null),
+	        _react2.default.createElement(_Navbar2.default, null),
 	        _react2.default.createElement(_testing2.default, null)
 	      );
 	    }
@@ -21616,7 +21616,7 @@
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21631,6 +21631,14 @@
 	var _Brand = __webpack_require__(181);
 
 	var _Brand2 = _interopRequireDefault(_Brand);
+
+	var _Logo = __webpack_require__(183);
+
+	var _Logo2 = _interopRequireDefault(_Logo);
+
+	var _Navbutton = __webpack_require__(182);
+
+	var _Navbutton2 = _interopRequireDefault(_Navbutton);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21650,15 +21658,17 @@
 	  }
 
 	  _createClass(NavBar, [{
-	    key: "cunstructor",
+	    key: 'cunstructor',
 	    value: function cunstructor(props) {}
 	  }, {
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "container-nav-bar" },
-	        _react2.default.createElement(_Brand2.default, null)
+	        'div',
+	        { className: 'container-nav-bar' },
+	        _react2.default.createElement(_Brand2.default, null),
+	        _react2.default.createElement(_Logo2.default, null),
+	        _react2.default.createElement(_Navbutton2.default, null)
 	      );
 	    }
 	  }]);
@@ -21687,16 +21697,76 @@
 	var Brand = function Brand() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "container-brand" },
+	    { className: "container-nav-brand" },
 	    _react2.default.createElement(
 	      "h1",
-	      { className: "brand" },
+	      { className: "nav-brand" },
 	      "Exchange"
 	    )
 	  );
 	};
 
 	exports.default = Brand;
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Navbutton = function Navbutton() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "container-nav-button" },
+	    _react2.default.createElement(
+	      "button",
+	      { className: "nav-button" },
+	      "click"
+	    )
+	  );
+	};
+
+	exports.default = Navbutton;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Logo = function Logo() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "container-nav-logo" },
+	    _react2.default.createElement(
+	      "h1",
+	      { className: "nav-logo" },
+	      "Our Logo"
+	    )
+	  );
+	};
+
+	exports.default = Logo;
 
 /***/ }
 /******/ ]);
