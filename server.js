@@ -1,29 +1,6 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-// const passport = require('passport');
-
-// const Strategy = required('passport-facebook').Strategy;
-
-// passport.use(new Strategy({
-//     clientID: process.env.CLIENT_ID,
-//     clientSecret: process.env.CLIENT_SECRET,
-//     callbackURL: 'http://localhost:3000/login/facebook/return',
-//     profileFields: ['email', 'displayName', 'id', 'picture.type(large)']
-//   },
-//   function(accessToken, refreshToken, profile, cb) {
-    
-//     return cb(null, profile);
-//   }));
-
-// passport.serializeUser(function(user, cb) {
-//   cb(null, user);
-// });
-
-// passport.deserializeUser(function(obj, cb) {
-//   cb(null, obj);
-// });
-
 
 const app = express();
 
