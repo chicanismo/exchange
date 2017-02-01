@@ -1,9 +1,11 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 
-export default class Testing extends Component {
-  render() {
-    return (
+const Testing = () => {
+  return (
+    <div>
       <h6>I know this should be stateless</h6>
-    )
-  }
+    </div>
+  )
 }
+
+export default Testing;
