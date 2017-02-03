@@ -1,18 +1,18 @@
 module.exports = {
-  entry: "./index.js",
+  entry: './index.jsx',
   output: {
-    filename: "./public/bundle.js",
+    filename: './public/bundle.js',
   },
   module: {
     loaders: [
       { test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: "babel-loader"
-      }
+        exclude: [/node_modules/],
+        loader: 'babel-loader',
+      },
     ],
   },
   resolve: {
-    extensions: ['', '.js', '.es6', 'jsx', '.css'],
+    extensions: ['', '.js', '.es6', '.jsx', '.css'],
   },
   watch: true,
-}
+};

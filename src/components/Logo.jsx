@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from 'react';
 
-const Logo = () => {
-  return(
-      <div className="container-nav-logo">
-        <h1 className="nav-logo">Our Logo</h1>
-      </div>
-    )
-}
+const Logo = () => (
+  <div className="container-nav-logo">
+    <h1 className="nav-logo">Our Logo</h1>
+  </div>
+  );
 
 export default Logo;
